@@ -1,0 +1,6 @@
+; $Id: $
+name = FEA-TS Local Config
+description = Local settings
+core = 7.x
+
+required = FALSE

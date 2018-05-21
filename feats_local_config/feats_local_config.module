@@ -1,0 +1,21 @@
+<?php
+
+/**
+* Implements hook_menu_alter.
+* Check access for forum menu item.
+*/
+
+function feats_local_config_menu_alter(&$items) {
+  	$paths = array(
+		'report' => 'admin/reports/updates',
+		'module' => 'admin/modules',
+		'theme' => 'admin/appearance',
+	);
+
+	foreach ($paths as $context => $path) {
+		$items[$path . '/install'] = array(
+		  'access callback' => FALSE, 
+		  'type' => MENU_LOCAL_ACTION,
+		);
+	}
+}
