@@ -1,1 +1,1 @@
-# drupal-feats-local
+# drupal-feats-local-config
